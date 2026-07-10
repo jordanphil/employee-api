@@ -9,7 +9,7 @@ employees = [
 
 @app.route("/")
 def home():
-    return jsonify({"status": "ok"})
+    return jsonify({"status": "ok", "version": "1.0.1"})
 
 @app.route("/api/employees")
 def get_employees():
